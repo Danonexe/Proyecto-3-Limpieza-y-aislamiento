@@ -20,7 +20,7 @@ El kernel es el corazón del sistema operativo. Protegerlo es crítico porque un
 
 ## Instalación paso a paso
 
-### Medida 1️⃣: Permisos estrictos en /boot
+### Medida 1: Permisos estrictos en /boot
 
 #### ¿Qué hemos hecho?
 
@@ -53,7 +53,7 @@ ls -la /boot/config-*
 
 ---
 
-### Medida 2️⃣: Sysctl Hardening del kernel
+### Medida 2: Sysctl Hardening del kernel
 
 #### ¿Qué hemos hecho?
 
@@ -104,7 +104,7 @@ sysctl kernel.randomize_va_space
 
 ---
 
-### Medida 3️⃣: Montaje de /proc con hidepid=2
+### Medida 3: Montaje de /proc con hidepid=2
 
 #### ¿Qué hemos hecho?
 
@@ -152,7 +152,7 @@ mount | grep proc
 
 ---
 
-### Medida 4️⃣: LKRG (Linux Kernel Runtime Guard) **EXTRA**
+### Medida 4: LKRG (Linux Kernel Runtime Guard) **EXTRA**
 
 #### ¿Qué hemos hecho?
 
@@ -235,7 +235,7 @@ systemctl status lkrg 2>/dev/null || echo "Sin servicio systemd"
 
 ---
 
-### Medida 5️⃣: Kernel Lockdown
+### Medida 5: Kernel Lockdown
 
 #### ¿Qué hemos hecho?
 
